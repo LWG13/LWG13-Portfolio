@@ -1,0 +1,57 @@
+@font-face {
+  font-family: Centra;
+  src: url("./centra.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: Centra;
+  src: url("./centraMedium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: Centra;
+  src: url("./centraBook.ttf");
+  font-weight: 400;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+body{
+  font-weight: 400;
+  overflow-x: hidden;
+  positin: relative;
+  background-color: #121212 !important;
+  color: #fff !important;
+  font-family: "Centra", sans-serif !important;
+}
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1150px;
+}
+.container{
+  width: 1150px;
+}
+.content{
+  flex: 1;
+}
+@media only screen and (max-width: 740px) {
+  .container{
+    width: 400px;
+  }
+  .wrapper{
+    width: 400px;
+  }
+}
