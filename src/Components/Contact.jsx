@@ -1,60 +1,84 @@
 
 import "./Contact.scss"
+import axios from "axios"
 import { Grid } from "@mui/material"
-import { useState } from "react"
+import { useState, useRef } from "react"
 import contact from "./contact.png"
-
+import { useQuery, useMutation, useQueryClient  } from "react-query"
 export default function Contact() {
-  const formD = {
-    firstName: "",
-    lastName: "",
-    email: "",
-    phone: "",
-    message: ""
-  }
+  const addUser = (user) => {   
+  //return axios.post("https://fb2d114d-313c-4cd4-aba1-2b232d4f9333-00-21ybggit4xcqu.pike.replit.dev:3001/data", user)
+  return request({ url: "/contact", method: "post", data: user})
+}
 
-  const [formDetail, setFormDetail] = useState(formD)
-  const [buttonText, setButtonText] = useState("Send")
-  const [status, setStatus] = useState({})
-
-  const onFormUpdate = (category, value) => {
-    setFormDetail({
-      ...formDetail,
-      [category]: value
-    })
-  }
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setButtonText("Sending...")
-
-    try {
-      const response = await fetch("http://localhost:5000/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json;charset=utf-8",
-        },
-        body: JSON.stringify(formDetail),
-      });
-
-      const result = await response.json(); 
-
-      setButtonText("Send");
-      setFormDetail(formD);
-
-      if (result.code === 200) {
-        setStatus({
-          success: true,
-          message: "Message sent successfully"
-        });
-      } else {
-        setStatus({ success: false, message: "Something went wrong, please try again later" });
-      }
-    } catch (error) {
-      setButtonText("Send");
-      setStatus({ success: false, message: "Error: " + error.message });
+const useMutationUser = () => {
+  const queryClient = useQueryClient()
+  return useMutation(addUser, {
+    //onSuccess: (data) => {
+      //queryClient.setQueryData("data-user",(oldValue) => {
+       // return {
+      //  ...oldValue,
+        //  data: [...oldValue.data, data.data]
+      //  }
+    // })
+   // }
+  onMutate: async (newValue) => {
+    await queryClient.cancelQueries("contact")
+    const prevData = queryClient.getQueryData("contact")
+    queryClient.setQueryData("contact",(oldValue) => {                  return {                             ...oldValue,                        data: [
+       ...oldValue.data,
+      {id: oldValue?.data?.length + 1, newValue}
+        ]
+    }})
+    return {
+      prevData,
     }
-  };
+  },
+  onSuccess: (_data,_error, context) => {
+    queryClient.setQueryData("contact", context.prevData)
+  },
+  onSettled: () => {
+    queryClient.invalidateQueries("contact")
+  }
+  })
+}
+  const client = axios.create({baseURL: " https://b64ef30c-0de5-4279-9e28-8961307527b4-00-1skni997sj2au.sisko.replit.dev:3000"})
+const request = ({...option}) => {
+  client.defaults.headers.common["Authorization"] = "Bearer token"  
+  const onSuccess = (response) => response
+  const onError = (error) => {
+    return error
+  }
+  return client(option).then(onSuccess).catch(onError)
+}
+const getData = () => {   
+  //return axios.get(" https://fb2d114d-313c-4cd4-aba1-2b232d4f9333-00-21ybggit4xcqu.pike.replit.dev:3001/data")
+  return request({url: "/contact"})
+}
+
+  const { mutate } = useMutationUser()
+  
+  
+
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
+  const [phone, setPhone] = useState()
+  const [message, setMessage] = useState("")
+
+  
+  const handleSubmit = () => {
+    const user = {name, email, phone,message};
+    mutate(user)
+    setName("")
+    setEmail("")
+    setPhone("")
+    setMessage("")
+  }
+
+  
+  const { isLoading, isError, error } = useQuery("contact", getData)
+
+
   return (
     <section className="contact" id="connect">
       <div className="container">
@@ -66,30 +90,19 @@ export default function Contact() {
           </Grid>
           <Grid item xs={12} md={6}>
            <div className="form-contact">
-            <h2>Contact me</h2>
-            <form onSubmit={handleSubmit}>
-                  <input type="text" value={formDetail.firstName} placeholder="First Name" onChange={(e) => onFormUpdate("firstName", e.target.value)} />
-            
-                  <input type="text" value={formDetail.lastName} placeholder="Last Name" onChange={(e) => onFormUpdate("lastName", e.target.value)} />
-            
-                
-                  <input type="email" value={formDetail.email} placeholder="Email" onChange={(e) => onFormUpdate("email", e.target.value)} />
           
-              
-                  <input type="tel" value={formDetail.phone} placeholder="Phone Number" onChange={(e) => onFormUpdate("phone", e.target.value)} />
-            
-                
-                  <textarea rows="6" value={formDetail.message} placeholder="Message" onChange={(e) => onFormUpdate("message", e.target.value)} />
+            <h2>Contact me</h2>
+             <div>
+                  <input type="text" value={name} placeholder="Name" onChange={(e) => setName( e.target.value)}/>
+                  <input type="email" value={email} placeholder="Email" onChange={(e) => setEmail( e.target.value)}/>
+                  <input type="tel" value={phone} min="0" max="10" placeholder="Phone Number" onChange={(e) => setPhone( e.target.value)} />
+                  <textarea rows="6" value={message} placeholder="Message" onChange={(e) => setMessage( e.target.value)} />
+             </div>
                   <br />
-                  <button  className="btn-contact" type="submit"><span>{buttonText}</span></button>
+                  <button  className="btn-contact" onClick={handleSubmit}><span>Submit</span></button>
             
-                {status.message && (
-                  <Grid item>
-                    <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
-                  </Grid>
-                )}
-            
-            </form>
+              {isLoading ? <p>Sending</p> : null}
+              {isError ? <p>Error: {error}</p> : null}
            </div>
           </Grid>
         </Grid>

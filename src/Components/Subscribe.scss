@@ -1,0 +1,32 @@
+.box{
+  width: 100%; 
+  background: #151515;
+  margin-top: 50px;
+  padding: 20px;
+  align-items: center;
+}
+.box .newsletter-bx{
+  background: white;
+  color: black;
+  padding: 15px;
+  width: 100%;
+  border-radius: 15px;
+  display: flex;
+
+}
+.box .newsletter-bx .new-email-bx .btn-sub{
+  border: 1px solid black;
+  outline: none;
+  background-color: white;
+
+  padding: 5px;
+  border-radius: 5px;
+}
+.box .newsletter-bx .new-email-bx .btn-sub input{
+  height: 30px;
+}
+.box .newsletter-bx .new-email-bx .btn-sub:hover{
+  background: black;
+  color: white;
+  transition: 0.2s ease-in-out;
+}

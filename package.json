@@ -1,15 +1,17 @@
 {
+  "homepage": "https://LWG13.github.io/LWG13-Portfolio"
   "name": "react-javascript",
   "version": "1.0.0",
   "type": "module",
   "description": "React TypeScript on Replit, using Vite bundler",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "server": "node index.js",
-    "client": "npm run start --prefix client",
-
+    "server": "node index.cjs",
+    "serve-json": "json-server --watch db.json --port 3000"
   },
   "keywords": [],
   "author": "",
@@ -28,14 +30,19 @@
     "@emotion/styled": "^11.13.0",
     "@mui/material": "^6.1.4",
     "antd": "^5.21.4",
+    "axios": "^1.7.7",
     "bootstrap": "^5.3.3",
     "cors": "^2.8.5",
     "express": "^4.21.1",
+    "gh-pages": "^6.2.0",
+    "json-server": "^1.0.0-beta.3",
     "nodemailer": "^6.9.15",
     "react-bootstrap": "^2.10.5",
     "react-bootstrap-icons": "^1.11.4",
     "react-icons": "^5.3.0",
+    "react-mailchimp-subscribe": "^2.1.3",
     "react-multi-carousel": "^2.8.5",
+    "react-query": "^3.39.3",
     "react-router-dom": "^6.27.0",
     "sass": "^1.80.3"
   }

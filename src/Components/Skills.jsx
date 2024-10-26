@@ -5,9 +5,9 @@ import Carousel from "react-multi-carousel"
 import "./Skills.scss"
 import p44 from "./44.png"
 import p41 from "./41.png"
-import p67 from "./67.png"
+import p53 from "./53.png"
 import p70 from "./70.png"
-import m from "./m.png"
+import p17 from "./17.png"
 export default function Skills() {
   return (
     <section className="skill" id="skill">
@@ -18,9 +18,15 @@ export default function Skills() {
             <Grid container my={4}>
              <Grid item xs={6} sm={4}>
               <div className="item" >
-               <img src={p67} alt ="Image" />
-               <h5>Web Developer</h5>
+               <img src={p53} alt ="Image" />
+               <h5>Frontend</h5>
               </div>
+             </Grid>
+             <Grid item xs={6} sm={4}>
+                <div className="item" >
+                 <img src={p17} alt ="Image" />
+                 <h5>Backend</h5>
+                </div>
              </Grid>
              <Grid item xs={6} sm={4}>
               <div className="item" >

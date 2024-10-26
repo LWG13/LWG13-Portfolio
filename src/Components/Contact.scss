@@ -29,15 +29,18 @@
 .form-contact .btn-contact{
   width: 130px;
   height: 30px;
-  border-radius: 10px;
+  border-radius: 7px;
   outline: none;
   border: none;
   background-color: white;
 }
+.form-contact .btn-contact:hover{
+  background-color: black;
+  color: white;
+}
 input[type=text], input[type=email],input[type=tel]{
   width: 100%;
   height: 50px;
-  margin-right: 15px;
   padding: 10px;
   border-radius: 10px;
 }

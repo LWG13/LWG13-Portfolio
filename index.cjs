@@ -13,6 +13,9 @@ app.listen(5000, () => {
 })
 
 const contactEmail = nodemailer.createTransport({
+  host: "smtp.gmail.com",
+  port: 465,
+  secure: true,
   service: "gmail",
   auth: {
     user: "********@gmail.com",
@@ -27,7 +30,7 @@ contactEmail.verify((error) => {
     console.log("Ready to Send");;
   }
 });
-router.post("/contact", (req, res) => {
+router.post("/", (req, res) => {
   const name = req.body.firstName + req.body.lastName;
   const email = req.body.email;
   const phone = req.body.phone;
