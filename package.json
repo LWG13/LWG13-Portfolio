@@ -1,5 +1,6 @@
 {
-  "name": "react-javascript",
+  "homepage": "https://LWG13.github.io/LWG13-Portfolio/",
+  "name": "LWG13-Portfolio",
   "version": "1.0.0",
   "type": "module",
   "description": "React TypeScript on Replit, using Vite bundler",
