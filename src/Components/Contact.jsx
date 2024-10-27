@@ -2,7 +2,7 @@
 import "./Contact.scss"
 import axios from "axios"
 import { Grid } from "@mui/material"
-import { useState, useRef } from "react"
+import { useState} from "react"
 import contact from "./contact.png"
 import { useQuery, useMutation, useQueryClient  } from "react-query"
 export default function Contact() {
