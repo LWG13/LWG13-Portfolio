@@ -42,7 +42,7 @@ const useMutationUser = () => {
   }
   })
 }
-  const client = axios.create({baseURL: " https://b64ef30c-0de5-4279-9e28-8961307527b4-00-1skni997sj2au.sisko.replit.dev:3000"})
+  const client = axios.create({baseURL: "https://b64ef30c-0de5-4279-9e28-8961307527b4-00-1skni997sj2au.sisko.replit.dev:3000"})
 const request = ({...option}) => {
   client.defaults.headers.common["Authorization"] = "Bearer token"  
   const onSuccess = (response) => response
