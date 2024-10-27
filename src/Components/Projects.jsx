@@ -29,27 +29,6 @@ export default function Projects() {
           <button className="linkBtn">Link Demo</button>
          </div>
         </Grid>
-         <Grid item xs={6} sm={4}>
-          <div className="content">
-           <img src={web} alt="project" />
-           <h5>My Website Portfolio</h5>
-           <button className="linkBtn">Link Demo</button>
-          </div>
-         </Grid>
-         <Grid item xs={6} sm={4}>
-          <div className="content">
-           <img src={web} alt="project" />
-           <h5>My Website Portfolio</h5>
-           <button className="linkBtn">Link Demo</button>
-          </div>
-         </Grid>
-         <Grid item xs={6} sm={4}>
-          <div className="content">
-           <img src={web} alt="project" />
-           <h5>My Website Portfolio</h5>
-           <button className="linkBtn">Link Demo</button>
-          </div>
-         </Grid>
       </Grid>
      </div>
         <div className={tab === 2 ? "content-box" : "content-box deactive"}>
