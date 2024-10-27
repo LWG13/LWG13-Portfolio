@@ -41,6 +41,12 @@
   display: flex;
   align-items: center;
 }
+.banner button a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+  margin-botton: 10px;
+}
 .banner button svg {
   font-size: 25px;
   margin-left: 10px;

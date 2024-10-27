@@ -12,14 +12,14 @@ export default function App() {
     <div className="wrapper">
      <Navigation />
     </div>
-    <div className="container">
+     <main>
       <Banner />
       <Skills />
       <Projects />
       <Contact />
       <Subscribe />
       <Footer />
-    </div>
+     </main>
    </div>
     
   )
