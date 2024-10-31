@@ -24,7 +24,7 @@ Navigation() {
          <a href=" https://www.linkedin.com/me?trk=p_mwlite_feed-secondary_nav"><img src={inkendIn} alt="LinkedIn" /></a>
        </div>
        <button className="vvd" onClick ={() => console.log("connect")}>
-        <span>Let's Contact!</span>
+        <a href="mailto:tranlegiabao929@gmail.com ">Let's Contact!</a>
        </button>
       </span>
     </div>

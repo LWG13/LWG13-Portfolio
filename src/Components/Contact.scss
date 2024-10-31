@@ -27,16 +27,21 @@
   
 }
 .form-contact .btn-contact{
+  color: white;
   width: 130px;
   height: 30px;
   border-radius: 7px;
   outline: none;
   border: none;
-  background-color: white;
+  background-color: purple;
 }
 .form-contact .btn-contact:hover{
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
+}
+label{
+  float: left;
+  padding: 10px;
 }
 input[type=text], input[type=email],input[type=tel]{
   width: 100%;

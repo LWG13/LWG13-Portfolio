@@ -88,8 +88,9 @@ span.navbar-text{
   background-color: transparent;
   transition: 0.3s ease-in-out;
 }
-.navbar-text button span {
-  z-index: 1;
+.navbar-text button a{
+  text-decoraion: none;
+  color: #fff;
 }
 .navbar-text button::before{
   content: "";

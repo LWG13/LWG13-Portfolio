@@ -93,9 +93,13 @@ const getData = () => {
           
             <h2>Contact me</h2>
              <div>
+               <label>Name</label>
                   <input type="text" value={name} placeholder="Name" onChange={(e) => setName( e.target.value)}/>
+               <label>Email</label>
                   <input type="email" value={email} placeholder="Email" onChange={(e) => setEmail( e.target.value)}/>
+               <label>Phone Number</label>
                   <input type="tel" value={phone} min="0" max="10" placeholder="Phone Number" onChange={(e) => setPhone( e.target.value)} />
+               <label>Message</label>
                   <textarea rows="6" value={message} placeholder="Message" onChange={(e) => setMessage( e.target.value)} />
              </div>
                   <br />
