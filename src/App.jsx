@@ -8,9 +8,6 @@ import Subscribe from "./Components/subscribe.jsx"
 export default function App() {
   return (
    <div>
-    <div className="wrapper">
-     <Navigation />
-    </div>
     <div className="container">
       <Banner />
       <Skills />
