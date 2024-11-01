@@ -20,7 +20,7 @@ export default function SubscribeTemp({onValidated, status, message}) {
        <div className="newsletter-bx">
         <Grid container my={4}>
           <Grid item lg={12} md={6} xl={5} >
-           <h3>Subscribe to my Newsletter</h3>
+           <h2>Subscribe to my Newsletter</h2>
            <p>Get the lasted news in my work</p>
             {status === "sending" && <p className="alert">Sending...</p>}
             {status === "error" && <p className="error">{message}</p>}

@@ -18,7 +18,7 @@ export default function Footer() {
            </div>
          </Grid>
          <Grid item md={6} xl={7}>
-           <div className="social-icon">
+           <div className="social-icon1">
             <a href=" https://github.com/LWG13" ><img src={github} alt="github" /></a>
             <a href=" https://www.facebook.com/profile.php?id=100086165035880&mibextid=ZbWKwL"><img src={Facebook} alt="facebook" /></a>
             <a href=" https://www.linkedin.com/me?trk=p_mwlite_feed-secondary_nav"><img src={inkendIn} alt="LinkedIn" /></a>

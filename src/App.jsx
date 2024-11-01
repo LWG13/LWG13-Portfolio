@@ -9,9 +9,6 @@ import Footer from "./Components/Footer.jsx"
 export default function App() {
   return (
    <div>
-    <div className="wrapper">
-     <Navigation />
-    </div>
      <div className="container">
       <Banner />
       <Skills />

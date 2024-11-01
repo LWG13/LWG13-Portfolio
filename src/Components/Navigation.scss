@@ -112,8 +112,89 @@ span.navbar-text{
   height: 100%;
   position: absolute;
 }
+image{
+ width: 50px;
+  padding-right: 15px;
+}
+.menu-trigger img{
+  overflow: hidden;
+  cursor: pointer;
+}
+ 
+.dropdownmenu{
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  background-color: black;
+  width: 200px;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+.dropdownmenu::before{
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 20px;
+  height: 20px;
+  width: 20px;
+  transform: rotate(45deg);
+}
+.dropdownmenu.active {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+  transform: translateY(0);
+}
+.dropdownmenu.deactive{
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  transform: translateY(-20px);
+}
+h3{
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  padding: 20px 0;
+  font-weight: 500;
+  line-height: 1.2rem;
+}
+h3 span{
+  font-size: 14px;
+  color: grey;
+  font-weight:400px;
+}
+.dropdownmenu ul li{
+  padding: 10px 0;
+  border-top: 1px solid rgba(0,0,0,0.5);
+}
+.dropdownmenu ul li:hover{
+  cursor: pointer;
+  color: purple;
+}
+.dropdownmenu ul li:hover img{
+  opacity: 1;
+  cursor: pointer;
+}
 
-@media only screen and (max-width: 740px){
+.dropdownitem{
+  display: flex;
+  margin: 10px auto;
+}
+.dropdownitem img {
+  max-width: 20px;
+  margin-right: 10px;
+  obacity: 0.5;
+  transition: 0.5s;
+}
+.dropdownitem .link{
+  font-size: 15px;
+  margin-left: 10px;
+  transition: 0.5s;
+  text-decoration: none;
+  color: white;
+}
+@media only screen and (max-width: 464px){
     .logoWeb{
        height: 50px;
         width: 90px;
@@ -124,7 +205,15 @@ span.navbar-text{
     .navbar-text button{
       display: none;
     }
+    .social-icon {
+      display: none;
+    }
 }
-@media only screen and (min-width: 740px) {
-  
+@media only screen and (min-width: 465px) {
+  .menu-trigger{
+    display: none;
+  }
+  .dropdownmenu{
+    display: none;
+  }
 }
