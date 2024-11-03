@@ -19,7 +19,6 @@ Navigation() {
       <img src={Logo} alt="amd" className="logoWeb" />
       <ul>
        <li><Link to="/LWG13-Portfolio/">Home</Link></li>
-       <li><Link to="/LWG13-Portfolio/service">Service</Link></li>
        <li><Link to="/LWG13-Portfolio/faq">FAQ</Link></li>
       </ul>
       <span className="navbar-text">
