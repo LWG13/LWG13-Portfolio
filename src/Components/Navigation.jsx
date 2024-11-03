@@ -59,9 +59,6 @@ function Menu({menu, setMenu}) {
              <li  className="dropdownitem" >
                <Link to="/LWG13-Portfolio/" className="link">Home</Link>
              </li>
-             <li className="dropdownitem">
-              <Link to="/LWG13-Portfolio/service" className="link">Service</Link>
-             </li> 
             <li className="dropdownitem">
       <Link to="/LWG13-Portfolio/faq" className="link">FAQ</Link>
            </li>
