@@ -20,10 +20,6 @@ const router = createBrowserRouter([
             element: <App />,
           },
           {
-            path: "/LWG13-Portfolio/service",
-            element: <Service />
-          },
-          {
             path: "/LWG13-Portfolio/faq",
             element: <Faq />,
           }

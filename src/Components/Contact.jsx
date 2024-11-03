@@ -82,13 +82,8 @@ const getData = () => {
   return (
     <section className="contact" id="connect">
       <div className="container">
-        <Grid container my={4}>
-          <Grid item xs={12} md={6}>
-            <div className="image-contact">
-              <img src={contact} alt="contact" />
-            </div>
-          </Grid>
-          <Grid item xs={12} md={6}>
+        
+          
            <div className="form-contact">
           
             <h2>Contact me</h2>
@@ -108,8 +103,6 @@ const getData = () => {
               {isLoading ? <p>Sending</p> : null}
               {isError ? <p>Error: {error}</p> : null}
            </div>
-          </Grid>
-        </Grid>
       </div>
     </section>
   )

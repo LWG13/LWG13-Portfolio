@@ -1,0 +1,30 @@
+
+.service{
+  width: 100%;
+  background-color: #151515;
+  padding: 25px;
+  text-align: center;
+  align-items: center; margin-top: 70px;
+}
+.service .service-bx{
+  background: linear-gradient(to right, #c471f5 0%, #fa71cd 100%);
+  padding: 10px;
+  font-size: 14px;
+  height: 280px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
+  color: black;
+}
+.service .service-bx img {
+  width: 70px;
+}
+.service .service-bx h2 {
+  padding: 8px;
+}
+@media only screen and (max-width: 464px) {
+  .service .service-bx {
+    font-size: 15px;
+  }
+}
+

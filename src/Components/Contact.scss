@@ -1,7 +1,7 @@
 
 .contact{
   margin-top: 40px;
-  background: linear-gradient(to right, #c471f5 0%, #fa71cd 100%);;
+  background: linear-gradient(to right, #c471f5 0%, #fa71cd 100%);
   width: 100%;
   border-radius: 15px;
   padding: 20px;
@@ -64,7 +64,5 @@ textarea{
 }
 
 @media only screen and (max-width: 464px) {
-  .container .image-contact{
-    display: none;
-  }
+
 }

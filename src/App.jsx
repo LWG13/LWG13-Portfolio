@@ -1,5 +1,5 @@
 import './App.scss'
-import Navigation from "./Components/Navigation.jsx"
+import Service from "./Components/Service.jsx"
 import Banner from "./Components/Banner.jsx"
 import Skills from "./Components/Skills.jsx"
 import Projects from "./Components/Projects.jsx"
@@ -13,6 +13,7 @@ export default function App() {
       <Banner />
       <Skills />
       <Projects />
+      <Service />
       <Contact />
       <Subscribe />
       <Footer />

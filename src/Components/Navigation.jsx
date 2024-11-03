@@ -24,8 +24,7 @@ Navigation() {
     <div className = "navigation">
       <img src={Logo} alt="amd" className="logoWeb" />
       <ul>
-       <li><Link to="/LWG13-Portfolio/">Home</Link></li>
-       <li><Link to="/LWG13-Portfolio/service">Service</Link></li>
+       <li><Link to="/LWG13-Portfolio/">Home</Link></li>   
        <li><Link to="/LWG13-Portfolio/faq">FAQ</Link></li>
       </ul>
       <span className="navbar-text">
@@ -66,9 +65,6 @@ function Menu({menu, setMenu}) {
              <li  className="dropdownitem" >
                <Link to="/LWG13-Portfolio/" className="link">Home</Link>
              </li>
-             <li className="dropdownitem">
-              <Link to="/LWG13-Portfolio/service" className="link">Service</Link>
-             </li> 
             <li className="dropdownitem">
       <Link to="/LWG13-Portfolio/faq" className="link">FAQ</Link>
            </li>
