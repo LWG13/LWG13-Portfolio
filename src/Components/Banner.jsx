@@ -42,7 +42,8 @@ export default function Banner() {
   return (
     <div className="banner" id="home">
       <Grid container my={4}>
-        <Grid item xs={12} sm={6}>             <img src={lwg} alt="Headder Img" />
+        <Grid item xs={12} sm={6}>   
+          <img src={lwg} alt="Headder Img" />
         </Grid>
         <br />
         <Grid item xs={12} sm={6}>
