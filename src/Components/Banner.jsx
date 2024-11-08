@@ -1,5 +1,4 @@
 
-
 import { useState, useEffect } from "react"
 import lwg from "./lwg.png"
 import { ArrowRightCircle } from "react-bootstrap-icons"
@@ -42,16 +41,15 @@ export default function Banner() {
   return (
     <div className="banner" id="home">
       <Grid container my={4}>
-        <Grid item xs={12} sm={6}>   
-          <img src={lwg} alt="Headder Img" />
+        <Grid item xs={12} sm={6}>             <img src={lwg} alt="Headder Img" />
         </Grid>
-        <br />
         <Grid item xs={12} sm={6}>
+         <div className="Banbox">
           <span className="tagline">Wellcome to my Portfolio</span>
-          <br/>
           <h1>Hi I'm LWG13 {text}</h1>
           <p>I'm a new on Web Developer, I was started to learn Web Development in June 2024 and i have very much interesting thing to learn in the future!</p>
-          <button onClick={() => console.log("connect")} className="btn">Let's Connect! <ArrowRightCircle size={25} /></button>
+          <button onClick={() => console.log("connect")} className="btn"> <a href="mailto:tranlegiabao929@gmail.com">Let's Connect! <ArrowRightCircle size={25} /></a></button>
+         </div>
         </Grid>
       </Grid>
     </div>
