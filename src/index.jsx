@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App'
 import Navigation from "./Components/Navigation.jsx"
 import Service from "./Components/Service.jsx"
-import Skill from "./SkillPages.jsx"
+import Skill from "./skillPages.jsx"
 import { QueryClient, QueryClientProvider} from "react-query"
 import {
   createBrowserRouter,
