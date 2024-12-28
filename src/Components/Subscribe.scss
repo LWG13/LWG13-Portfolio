@@ -30,3 +30,8 @@
   color: white;
   transition: 0.2s ease-in-out;
 }
+@media only screen and (max-width: 464px) {
+  .box{
+    width: 100%;
+  }
+}

@@ -8,8 +8,7 @@ import Subscribe from "./Components/subscribe.jsx"
 import Footer from "./Components/Footer.jsx"
 export default function App() {
   return (
-   <div>
-     <div className="container">
+   <div className="container">
       <Banner />
       <Skills />
       <Projects />
@@ -17,7 +16,6 @@ export default function App() {
       <Contact />
       <Subscribe />
       <Footer />
-     </div>
    </div>
     
   )

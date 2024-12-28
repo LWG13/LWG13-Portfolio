@@ -10,8 +10,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "server": "node index.cjs",
-    "serve-json": "json-server --watch db.json --port 3000"
+    "server": "node index.cjs"
   },
   "keywords": [],
   "author": "",
@@ -37,6 +36,8 @@
     "express": "^4.21.1",
     "gh-pages": "^6.2.0",
     "json-server": "^1.0.0-beta.3",
+    "mongoose": "^8.8.1",
+    "node-cron": "^3.0.3",
     "nodemailer": "^6.9.15",
     "react-bootstrap": "^2.10.5",
     "react-bootstrap-icons": "^1.11.4",

@@ -45,10 +45,12 @@ export default function Banner() {
         <Grid item xs={12} sm={6}>             <img src={lwg} alt="Headder Img" />
         </Grid>
         <Grid item xs={12} sm={6}>
+         <div className="Banbox">
           <span className="tagline">Wellcome to my Portfolio</span>
           <h1>Hi I'm LWG13 {text}</h1>
           <p>I'm a new on Web Developer, I was started to learn Web Development in June 2024 and i have very much interesting thing to learn in the future!</p>
           <button onClick={() => console.log("connect")} className="btn"> <a href="mailto:tranlegiabao929@gmail.com">Let's Connect! <ArrowRightCircle size={25} /></a></button>
+         </div>
         </Grid>
       </Grid>
     </div>

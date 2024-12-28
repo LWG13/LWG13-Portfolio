@@ -29,6 +29,10 @@
 .item {
   padding: 10px;
 }
+.item:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
 .item img {
   width: 50%;
   margin: 0 auto 15px auto;
@@ -45,6 +49,9 @@
  .skill h5{
    font-size: 18px;
    max-width: 400px;
+ }
+ .skill {
+   width: 100%;
  }
  .skill-bx{
    border-radius: 0px;

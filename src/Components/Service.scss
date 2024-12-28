@@ -16,6 +16,10 @@
   text-align: center;
   color: black;
 }
+.service .service-bx:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
 .service .service-bx img {
   width: 70px;
 }
@@ -23,8 +27,10 @@
   padding: 8px;
 }
 @media only screen and (max-width: 464px) {
+
   .service .service-bx {
     font-size: 15px;
   }
 }
+
 

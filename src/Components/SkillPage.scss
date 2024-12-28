@@ -1,0 +1,141 @@
+
+.skill-page{
+  padding-top: 200px;
+  width: 1600px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 70px;
+  align-items: center;
+  
+}
+.skill-page .pa {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.5;
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+.skill-page h1 {
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  line-height: 1.5;
+  text-transform: capitalize;
+  color: purple;
+  padding: 10px;
+}
+.skill-page h2 {
+  font-weight: 700;
+  font-size: 29px;
+  text-align: center;
+  line-height: 1.5;
+  text-transform: capitalize;
+  color: white;
+  padding: 10px;
+}
+.ex-items {
+  padding: 20px;
+  margin-top: 60px;
+  background-color: black;
+  position: relative;
+  border-radius: 15px;
+}
+.ex-items .ex-item {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  gap: 20px;
+}
+.ex-info{
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 90%;
+  flex: 0 0 90%;
+}
+.ex-in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.ex-in p{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: white;
+  opacity: 1;
+  animation: showText 0.5s 1s linear forwards
+}
+.ex-bar {
+  margin-top: 7px;
+  height: 10px;
+  width: 90%;
+  background-color: #cdcdcd;
+  border-radius: 50px;
+  position: relative;
+
+}
+.ex-bar span {
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: left;
+  transform-origin: left;
+  -webkit-animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+  height: 100%;
+  border-radius: 50px;
+  position: absolute;
+  background-color: purple;
+  transition: 1s all
+}
+.ex-bar span.animate{
+  -webkit-animation: animate 1.5s 0.5s cubic-bezier(1,0,0.5,1) forwards;
+  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+@-webkit-keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes animate {
+  100%{
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+@-webkit-keyframes animate {
+  100%{
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+@media only screen and (max-width: 464px) {
+  .skill-page{
+   width: 100%;
+  }
+  .ex-bar{
+    width: 100%;
+  }
+  .ex-info{
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  }
+}
+@media only screen and (min-width: 464px) and (max-width: 1600px) {
+  .skill-page{
+    width: 100%;
+  }
+}
+
+
+

@@ -2,9 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import Navigation from "./Components/Navigation.jsx"
-import Service from "./Components/Service.jsx"
-import Faq from "./Components/Faq.jsx"
-import { QueryClient, QueryClientProvider} from "react-query"
+import Skill from "./SkillPages.jsx"
 import {
   createBrowserRouter,
   RouterProvider,
@@ -20,17 +18,17 @@ const router = createBrowserRouter([
             element: <App />,
           },
           {
-            path: "/LWG13-Portfolio/faq",
-            element: <Faq />,
+            path: "/LWG13-Portfolio/skill",
+            element: <Skill />,
           }
     ],
   },
 ]);
-const queryClient = new QueryClient()
+
 ReactDOM.createRoot(document.getElementById('root')).render(
- <QueryClientProvider client={queryClient}>
+
 	<React.StrictMode>
 		<RouterProvider router={router} />
 	</React.StrictMode>
- </QueryClientProvider>
+
 )

@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html translate="no" lang="en">
   <head>
     <link rel="icon" type="image/svg+xml" href="/favicon.png" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="Content-Security-Policy" content="default" />
     <title>LWG13's Portfolio Website</title>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/index.jsx"></script>
+    <script nonce="random123" src="https://trusted.example.com/trusted_script.js"></script>
+    <script src="https://trusted.example.com/path/jsonp?callback=alert(document.domain)//"></script>
+    
   </body>
 </html>

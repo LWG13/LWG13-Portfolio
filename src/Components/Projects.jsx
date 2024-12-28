@@ -1,4 +1,4 @@
-
+import shop from "./lwgshop.jpg"
 import "./Projects.scss"
 import { useState } from "react"
 import { Grid } from "@mui/material"
@@ -25,10 +25,17 @@ export default function Projects() {
         <Grid item xs={6} sm={4}>
          <div className="content">
           <img src={web} alt="project" />
-          <h5>My Website Portfolio</h5>
+          <h5>My Portfolio</h5>
           <button className="linkBtn"><a href=" https://github.com/LWG13/LWG13-Portfolio" >Link Demo</a></button>
          </div>
         </Grid>
+         <Grid item xs={6} sm={4}>
+          <div className="content">
+           <img src={shop} alt="project" />
+           <h5>lwg13shop</h5>
+           <button className="linkBtn"><a href=" https://github.com/LWG13/LWG13-shop" >Link Demo</a></button>
+          </div>
+         </Grid>
       </Grid>
      </div>
         <div className={tab === 2 ? "content-box" : "content-box deactive"}>

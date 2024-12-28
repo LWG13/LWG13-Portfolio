@@ -1,15 +1,23 @@
 
 .banner{
-  margin-top: 0;
-  padding: 260px 0 200px 0;
-  background-image: url("./background.png");
+  padding-top: 200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 50px;
+  background-image: url("background.png");
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
+  text-align:center;
   align-items: center;
 }
-.banner .tagline {
+.banner .Banbox {
+  width: 100%;
+  text-align:center;
+  align-items: center;
+}
+.banner .Banbox .tagline {
   font-weight: 700;
   padding: 8px 10px;
   background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 188, 0.5));
@@ -17,8 +25,8 @@
   margin-bottom: 16px;
   display: inline-block;
 }
-.banner h1{
-  font-sizd: 65px;
+.banner .Banbox h1{
+  font-size: 25px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
@@ -36,25 +44,25 @@
   color: #fff;
   font-weight: 700;
   font-size: 20px;
-  margin-top: 60px;
-  letter-spacing: 0.8px;
   display: flex;
+  width: 220px;
   align-items: center;
+  margin-top: 10px;
+  border-radius: 10px;
+  height: 60px;
 }
-.banner button a {
+.banner .Banbox button a {
   text-decoration: none;
   color: #fff;
-  font-size: 17px;
-  margin-botton: 10px;
+  font-size: 20px;
 }
-.banner button svg {
-  font-size: 25px;
+.banner .Banbox button svg {
+  font-size: 15px;
   margin-left: 10px;
   transition: 0.3s ease-in-out;
-  line-height: 1;
 }
-.banner button:hover  svg {
-  margin-left: 25px;
+.banner .Banbox button:hover  svg {
+  margin-left: 15px;
 }
 .banner .btn{
   background-color: black;
@@ -64,17 +72,19 @@
 }
 .banner img {
   animation: updown 3s linear infinite;
-  width: 400px; 
+  width: 300px; 
   padding: 10px;
 }
 @media only screen and (max-width: 464px) {
   .banner{
    padding: 90px 0 70px 0;
    align-items: center;
+   width: 100%;
   }
   .banner img{
     width: 200px;
-    margin-left: 85px;
+    text-align: center;
+    align-items: center;
     animation: none;
   }
   .banner p {
@@ -89,11 +99,12 @@
     max-width: 370px;
     font-size: 19px;
   }
-  .banner .btn {
-    width: 210px;
-    height: 50px;
+  .banner button {
+    width: 220px;
+    height: 60px;
   }
 }
+
 @keyframes updown {
   0%{
     transform: translateY(-20px);

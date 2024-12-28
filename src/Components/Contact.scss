@@ -11,16 +11,14 @@
 .container{
   width: 100%;
 }
-.container .image-contact{
-  height: 500px;
-}
 .container .form-contact{
   display: flex;
   flex-direction: column;
   background: black;
-  align-items: center;
   border-radius: 15px;
   padding: 20px;
+  width: 100%;
+  float: center;
 }
 .form-contact h2{
   padding: 15px;
@@ -64,5 +62,13 @@ textarea{
 }
 
 @media only screen and (max-width: 464px) {
-
+  .container .form-contact{
+    width: 100%;
+  }
+  .contact {
+    width: 100%;
+  }
+  .container .image img{
+    display: none;
+  }
 }
