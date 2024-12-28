@@ -21,7 +21,7 @@ export default function Projects() {
        </span>
       </div>
       <div className={tab === 1 ? "content-box" : "content-box deactive"}>
-       <Grid container my={4} columnSpacing={1}>
+       <Grid container Spacing={1}>
         <Grid item xs={6} sm={4}>
          <div className="content">
           <img src={web} alt="project" />
