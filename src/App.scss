@@ -37,5 +37,19 @@ h1, h2, h3, h4, h5, h6{
 
 }
 .container{
+
   align-items: center;
 }
+
+  width: 1150px;
+  align-items: center;
+}
+@media only screen and (max-width: 740px) {
+  .container{
+    width: 400px;
+  }
+  .wrapper{
+    width: 400px;
+  }
+}
+

@@ -29,6 +29,7 @@ export default function Projects() {
           <button className="linkBtn"><a href=" https://github.com/LWG13/LWG13-Portfolio" >Link Demo</a></button>
          </div>
         </Grid>
+
          <Grid item xs={6} sm={4}>
           <div className="content">
            <img src={shop} alt="project" />
@@ -36,6 +37,7 @@ export default function Projects() {
            <button className="linkBtn"><a href=" https://github.com/LWG13/LWG13-shop" >Link Demo</a></button>
           </div>
          </Grid>
+
       </Grid>
      </div>
         <div className={tab === 2 ? "content-box" : "content-box deactive"}>

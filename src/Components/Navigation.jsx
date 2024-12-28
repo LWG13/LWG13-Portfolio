@@ -14,7 +14,10 @@ export default function
 Navigation() {
   const [menu, setMenu] = useState(false)
   return (
+
   <div className="outline">
+
+
    <div className="navi">
     <div className = "navigation">
       <img src={Logo} alt="amd" className="logoWeb" />
@@ -24,6 +27,7 @@ Navigation() {
       </ul>
       <span className="navbar-text">
        <div className="social-icon">
+
          <a href=" https://github.com/LWG13" ><img src={github} alt="github" /></a>
          <a href=" https://www.facebook.com/profile.php?id=100086165035880&mibextid=ZbWKwL" ><img src={Facebook} alt="Facbook" /></a>
          <a href=" https://www.linkedin.com/me?trk=p_mwlite_feed-secondary_nav"><img src={inkendIn} alt="LinkedIn" /></a>
@@ -73,3 +77,6 @@ function Menu({menu, setMenu}) {
   
   )
 }
+
+         
+

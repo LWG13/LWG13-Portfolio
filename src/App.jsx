@@ -6,9 +6,11 @@ import Projects from "./Components/Projects.jsx"
 import Contact from "./Components/Contact.jsx"
 import Subscribe from "./Components/subscribe.jsx"
 import Footer from "./Components/Footer.jsx"
+import Service from "./Components/Service.jsx"
+
 export default function App() {
   return (
-   <div className="container">
+    <div className="container">
       <Banner />
       <Skills />
       <Projects />

@@ -1,3 +1,4 @@
+
 /* src/App.css */
 .outline{
   width: 100%;
@@ -24,6 +25,16 @@
   height: 90px;
   width: 100%;
   justify-content: space-between;
+
+.navi{
+  padding: 15px;
+  width: 100%;
+}
+.navigation {
+  padding: 15px;
+  height: 90px;
+  width: 1130px;
+
   display:flex;
   align-items: center;
   background-color: #000;
@@ -64,6 +75,7 @@ span.navbar-text{
   margin-left: 14px;
 }
 .social-icon a{
+
   width: 42px;
   height: 42px;
   background: rgba(217, 217, 217, 0.1);
@@ -267,3 +279,4 @@ h3 span{
     display: none;
   }
 }
+

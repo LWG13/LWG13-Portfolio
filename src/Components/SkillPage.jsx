@@ -168,3 +168,4 @@ export default function SkillPage() {
     </section>
   )
 }
+

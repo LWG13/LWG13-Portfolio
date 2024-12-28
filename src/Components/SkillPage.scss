@@ -2,6 +2,7 @@
 .skill-page{
   padding-top: 200px;
   width: 1600px;
+  width: 100%;
   padding-right: 10px;
   padding-left: 10px;
   padding-bottom: 70px;
@@ -51,6 +52,7 @@
   -ms-flex-pack: justify;
   gap: 20px;
 }
+
 .ex-info{
   -webkit-box-flex: 0;
   -ms-flex: 0 0 90%;
