@@ -14,7 +14,7 @@ deploymentTarget = "static"
 build = ["npm", "run", "build"]
 publicDir = "dist"
 
-[[ports]]
+[[ports]] 
 localPort = 3000
 externalPort = 3000
 
