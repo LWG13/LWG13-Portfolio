@@ -22,8 +22,8 @@ Navigation() {
     <div className = "navigation">
       <img src={Logo} alt="amd" className="logoWeb" />
       <ul>
-       <li><Link to="/LWG13-Portfolio/">Home</Link></li>   
-       <li><Link to="/LWG13-Portfolio/skill">Skills</Link></li>
+       <li><Link to="/">Home</Link></li>   
+       <li><Link to="/skill">Skills</Link></li>
       </ul>
       <span className="navbar-text">
        <div className="social-icon">
@@ -66,10 +66,10 @@ function Menu({menu, setMenu}) {
          <div className={`dropdownmenu ${ menu ? "active" : "deactive" }`}>
            <h3>LWG13<br/><span>Web Developer</span></h3>
              <li  className="dropdownitem" >
-               <Link to="/LWG13-Portfolio/" className="link">Home</Link>
+               <Link to="/" className="link">Home</Link>
              </li>
             <li className="dropdownitem">
-      <Link to="/LWG13-Portfolio/skill" className="link">My Skill</Link>
+      <Link to="/skill" className="link">My Skill</Link>
            </li>
          </div>
        </div>
