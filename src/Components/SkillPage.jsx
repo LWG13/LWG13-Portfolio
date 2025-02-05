@@ -28,11 +28,11 @@ export default function SkillPage() {
            <div className="ex-info" >
            <div className="ex-in">
             <p>CSS/SASS</p>
-            <p>95%</p>
+            <p>98%</p>
            </div>
            </div>
-           <div className="ex-bar" data-percent="95%">
-             <span style={{width: "95%"}}></span>
+           <div className="ex-bar" data-percent="98%">
+             <span style={{width: "98%"}}></span>
            </div>
           </div>
          </Grid>
@@ -41,11 +41,11 @@ export default function SkillPage() {
           <div className="ex-info" >
           <div className="ex-in">
            <p>JavaScript</p>
-           <p>90%</p>
+           <p>95%</p>
           </div>
           </div>
-          <div className="ex-bar" data-percent="90%">
-            <span style={{width: "90%"}}></span>
+          <div className="ex-bar" data-percent="95%">
+            <span style={{width: "95%"}}></span>
           </div>
          </div>
         </Grid>
@@ -54,11 +54,11 @@ export default function SkillPage() {
           <div className="ex-info" >
           <div className="ex-in">
            <p>ReactJS</p>
-           <p>80%</p>
+           <p>86%</p>
           </div>
           </div>
-          <div className="ex-bar" data-percent="80%">
-            <span style={{width: "80%"}}></span>
+          <div className="ex-bar" data-percent="86%">
+            <span style={{width: "86%"}}></span>
           </div>
          </div>
         </Grid>
@@ -67,11 +67,11 @@ export default function SkillPage() {
           <div className="ex-info" >
           <div className="ex-in">
            <p>VueJS</p>
-           <p>55%</p>
+           <p>65%</p>
           </div>
           </div>
-          <div className="ex-bar" data-percent="55%">
-            <span style={{width: "55%"}}></span>
+          <div className="ex-bar" data-percent="65%">
+            <span style={{width: "65%"}}></span>
           </div>
          </div>
         </Grid>
@@ -85,11 +85,11 @@ export default function SkillPage() {
           <div className="ex-info" >
            <div className="ex-in">
             <p>NodeJS/ExpressJS</p>
-            <p>30%</p>
+            <p>57%</p>
            </div>
           </div>
-          <div className="ex-bar" data-percent="30%">
-            <span style={{width: "30%"}}></span>
+          <div className="ex-bar" data-percent="57%">
+            <span style={{width: "57%"}}></span>
           </div>
          </div>
         </Grid>
@@ -129,11 +129,11 @@ export default function SkillPage() {
           <div className="ex-info" >
            <div className="ex-in">
             <p>Web Design</p>
-            <p>44%</p>
+            <p>50%</p>
            </div>
           </div>
-          <div className="ex-bar" data-percent="44%">
-            <span style={{width: "44%"}}></span>
+          <div className="ex-bar" data-percent="50%">
+            <span style={{width: "50%"}}></span>
           </div>
          </div>
         </Grid>
