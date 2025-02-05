@@ -1,5 +1,5 @@
 import "./Navigation.scss";
-import React from "react";
+import React from "react"; 
 import amd from "./amd.png";
 import menu2 from "./menu.png" 
 import { useState, useRef, useEffect  } from "react"
