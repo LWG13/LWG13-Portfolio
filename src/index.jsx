@@ -16,15 +16,15 @@ import {
 
 const router = createBrowserRouter([
   {
-    path: "/LWG13-Portfolio/",
+    path: "/",
     element: <Navigation />,
     children: [
           {
-            path:"/LWG13-Portfolio/",
+            path:"/",
             element: <App />,
           },
           {
-            path: "/LWG13-Portfolio/skill",
+            path: "/skill",
             element: <Skill />,
           }
     ],
