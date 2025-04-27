@@ -26,7 +26,7 @@ export default function Projects() {
          <div className="content">
           <img src={web} alt="project" />
           <h5>My Portfolio</h5>
-          <button className="linkBtn"><a href=" https://github.com/LWG13/LWG13-Portfolio" >Link Demo</a></button>
+          <button className="linkBtn"><a href=" https://github.com/LWG13/LWG13-Portfolio" >Link Github</a></button>
          </div>
         </Grid>
 
@@ -34,7 +34,7 @@ export default function Projects() {
           <div className="content">
            <img src={shop} alt="project" />
            <h5>lwg13shop</h5>
-           <button className="linkBtn"><a href=" https://github.com/LWG13/LWG13-shop" >Link Demo</a></button>
+           <button className="linkBtn"><a href=" https://github.com/LWG13/LWG13-shop" >Link Github</a></button>
           </div>
          </Grid>
 
