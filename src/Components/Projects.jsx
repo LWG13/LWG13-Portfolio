@@ -3,6 +3,8 @@ import "./Projects.scss"
 import { useState } from "react"
 import { Grid } from "@mui/material"
 import web from "./myweb.jpg"
+import viober from "./viober.jpg"
+import fitness1 from "./fitness1.jpg"
 export default function Projects() {
   const [tab, setTab] = useState(1)
   return (
@@ -35,6 +37,20 @@ export default function Projects() {
            <img src={shop} alt="project" />
            <h5>lwg13shop</h5>
            <button className="linkBtn"><a href=" https://github.com/LWG13/LWG13-shop" >Link Github</a></button>
+          </div>
+         </Grid>
+         <Grid item xs={6} sm={4}>
+          <div className="content">
+           <img src={fitness1} alt="project" />
+           <h5>fitness1</h5>
+           <button className="linkBtn"><a href="https://github.com/LWG13/Fitness1-vuejs" >Link Github</a></button>
+          </div>
+         </Grid>
+         <Grid item xs={6} sm={4}>
+          <div className="content">
+           <img src={viober} alt="project" />
+           <h5>Viober</h5>
+           <button className="linkBtn"><a href="https://github.com/LWG13/Viober-social-media" >Link Github</a></button>
           </div>
          </Grid>
 
