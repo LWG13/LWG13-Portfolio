@@ -1,4 +1,5 @@
 import shop from "./lwgshop.jpg"
+import niex from "./XRecorder_20250818_01.jpg"
 import "./Projects.scss"
 import { useState } from "react"
 import { Grid } from "@mui/material"
@@ -20,7 +21,7 @@ export default function Projects() {
        </span>
        <span onClick={() => setTab(3)}>
           Tab 3
-       </span>
+       </span>src/Components/XRecorder_20250818_01.jpg
       </div>
       <div className={tab === 1 ? "content-box" : "content-box deactive"}>
        <Grid container Spacing={1}>
@@ -53,7 +54,13 @@ export default function Projects() {
            <button className="linkBtn"><a href="https://github.com/LWG13/Viober-social-media" >Link Github</a></button>
           </div>
          </Grid>
-
+         <Grid item xs={6} sm={4}>
+          <div className="content">
+           <img src={niex} alt="project" />
+           <h5>Niex News</h5>
+           <button className="linkBtn"><a href="https://github.com/LWG13/niex-news.git" >Link Github</a></button>
+          </div>
+         </Grid>
       </Grid>
      </div>
         <div className={tab === 2 ? "content-box" : "content-box deactive"}>
