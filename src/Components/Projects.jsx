@@ -22,7 +22,7 @@ export default function Projects() {
        </span>
        <span onClick={() => setTab(3)}>
           Tab 3
-       </span>src/Components/XRecorder_20250818_01.jpg
+       </span>
       </div>
       <div className={tab === 1 ? "content-box" : "content-box deactive"}>
        <Grid container Spacing={1}>
