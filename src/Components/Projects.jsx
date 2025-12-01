@@ -5,6 +5,7 @@ import { useState } from "react"
 import { Grid } from "@mui/material"
 import web from "./myweb.jpg"
 import viober from "./viober.jpg"
+import biomusic from "./logo.png"
 import fitness1 from "./fitness1.jpg"
 export default function Projects() {
   const [tab, setTab] = useState(1)
@@ -59,6 +60,13 @@ export default function Projects() {
            <img src={niex} alt="project" />
            <h5>Niex News</h5>
            <button className="linkBtn"><a href="https://github.com/LWG13/niex-news.git" >Link Github</a></button>
+          </div>
+         </Grid>
+         <Grid item xs={6} sm={4}>
+          <div className="content">
+           <img src={biomusic} alt="project" />
+           <h5>Bio Music</h5>
+           <button className="linkBtn"><a href="https://github.com/LWG13/bio-music.git" >Link Github</a></button>
           </div>
          </Grid>
       </Grid>
